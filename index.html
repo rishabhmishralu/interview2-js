@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1,h2{
+            color: aliceblue;
+            text-align: center;
+        }
+        b{
+            color: brown;
+            margin: 30px;
+        }
+        pre,p,dl{
+            color: aliceblue;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS INTERVIEW QUESTIONS</h1>
+    <h2>DAY2</h2>
+    <hr>
+    <p><b>1-What is creation phase and execution phase?</b></p>
+    <p>The creation phase includes creating the global and function execution contexts, creating the scope chain, and allocating memories for the variables and functions. During the execution phase, the JavaScript engine executes the code line by line. This includes evaluating and executing statements.</p>
+    <hr>
+    <p><b>2-What are objects in javascript?</b></p>
+    <p>object is a non premitive datatype .object is store multiple value same as array . but ojbect store the propety as key nad array store value as refrence index.
+        <br>
+       <dl>three type object in javaScript
+        <dt><ol>
+            <li>object literal</li>
+            <li>instance of Object directly</li>
+            <li>constructor function</li>
+        </ol></dt>
+       </dl> 
+    </p>
+    <hr>
+    <p><b>3-What are function constructors?</b></p>
+    <p>The Function() constructor creates a new Function object</p>
+    <pre>function student(name,rollno,city,age){
+         this.name=name;
+         this.rollno=rollno;
+         this.city=city;
+         this.age=age;
+        
+         }
+          const students= new student("rishabh",20,"lucknow",22)
+         console.log(students)</pre>
+    <hr>
+    <p><b>4-What are callbacks?</b></p>
+    <p>javaScript is synchronus and single linethread language.so its code exucutaion line by line. callback function are use for asynchrouns javaScript.and one function is use as argument to another function is called as callbacks</p>
+    <pre>function hi(){
+        console.log("hello");
+    }
+    function name(a){
+        console.log("rishbah");
+        hi()
+    }
+    name()</pre>
+    <hr>
+    <p><b>5-Explain prototypes</b></p>
+    <hr>
+    <p><b>6-What is prototype chain</b></p>
+    <hr>
+    <p><b>7-Give an example of inheritance using function constructor</b></p>
+    <hr>
+    <script src="./index.js"></script>
+</body>
+</html>
