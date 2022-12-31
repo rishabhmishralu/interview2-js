@@ -66,10 +66,31 @@
     name()</pre>
     <hr>
     <p><b>5-Explain prototypes</b></p>
+    <p>Every object in JavaScript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype <br> and by use of prototype we can add the values and property in object outside the object</p>
+    <pre>function student(name){
+        this.name=name;
+    
+    }
+    
+    student.prototype.city="lmp"
+    students=new student("rahul")
+    console.log(students.city);</pre>
     <hr>
     <p><b>6-What is prototype chain</b></p>
+    <p>The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype</p>
     <hr>
     <p><b>7-Give an example of inheritance using function constructor</b></p>
+    <pre>function student(name,rollNo){
+        this.name=name;
+        this.rollNo=rollNo;
+    }
+    let student1= new student("rishabh",08)
+    let student2= new student("aryan",02)
+    console.log(student1);
+    console.log(student2);
+    student1.sports='cricket'
+    
+    console.log(Object.getOwnPropertyNames(student1))</pre>
     <hr>
     <script src="./index.js"></script>
 </body>
